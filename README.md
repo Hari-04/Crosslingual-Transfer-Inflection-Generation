@@ -15,7 +15,7 @@ We created a Encoder-Decoder style model with attention for solving this sequenc
 
 We have used global attention to provide richer source encoding by taking all the time step in the source into consideration. We initially created a alignment vector which determines the similarity score between the encoder and the decoder by comparing current target hidden state with the every hidden state in source. We computed the context vector by performing the weighted average of alignment vector and the encoder states. The context vector and decoder states are concatenated and transferred using the tanh function to get the final decoding vector. This is passed through a softmax to predict the normalized value i.e., probability of the next word in the target sequence.
 
-All the models were implemented using Keras.
+All the models were implemented using Keras framework.
 
 
 ![alt text](model_arch.jpeg)
