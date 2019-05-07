@@ -17,6 +17,7 @@ We have used global attention to provide richer source encoding by taking all th
 
 All the models were implemented using Keras.
 
+
 ![alt text](model_arch.jpeg)
 
 
