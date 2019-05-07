@@ -1,0 +1,22 @@
+name: cltmi
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - numpy-base
+  - openssl
+  - pillow
+  - pip
+  - pycparser
+  - python=3.6
+  - readline
+  - setuptools
+  - six
+  - tk
+  - tqdm
+  - wheel
+  - keras
+  - tensorflow
+  - pip:
+    - keras
+
