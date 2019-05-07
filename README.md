@@ -5,7 +5,7 @@
 Inflection is the change in the form of a word to express different grammatical categories like tense, gender, voice, etc. 
 Natural language processing systems must be able to generate these inflected forms to perform other tasks like translation,
 speech recognition, etc. effectively. Not all world’s languages are distributed equally. Some languages simply have more
-resources compared to other languages. So, in this project we explored how we can transfer knowledge from high-resource languages that are genetically related to low-resource language.
+resources compared to other languages. So, in this project we explored how we can transfer knowledge from high-resource languages to genetically related low-resource languages.
 
 So, given a lemma and a bundle of morphological features, we have to generate a target inflected form. The dataset used contains many high-resource language examples and fewer low-resource language examples. In this project, the task is to perform morphological inflection in the low-resource language by exploiting some similarity to the high-resource language.
 
