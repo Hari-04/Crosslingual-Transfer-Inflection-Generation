@@ -26,6 +26,7 @@ All the models were implemented using Keras framework.
 ## Running in sd mode
 
 ```bash
+#Tested on Ubuntu 19.04. Should work on all linux machines
 # Create env
 conda env create -f environment.yml
 source activate cltmi
@@ -36,6 +37,7 @@ source activate cltmi
 ## Running in all mode
 
 ```bash
+#Tested on Ubuntu 19.04. Should work on all linux machines
 # Create env
 conda env create -f environment.yml
 source activate cltmi
