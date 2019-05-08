@@ -11,11 +11,11 @@ So, given a lemma and a bundle of morphological features, we have to generate a 
 
 ## Architecture of our model:
 
-We created a Encoder-Decoder style model with attention for solving this sequence to sequence learning problem. Both Encoder and Decoder have three components: Input layer, embedding layer and Stacked LSTM layer. We created and trained a language model whose weights are used to initialize the weights of the LSTM layers.
+We created a Encoder-Decoder style model with **Luong's attention** for solving this sequence to sequence learning problem. Both Encoder and Decoder have three components: Input layer, embedding layer and Stacked LSTM layer. **We created and trained a language model whose weights are used to initialize the weights of the LSTM layers.**
 
 We have used global attention to provide richer source encoding by taking all the time step in the source into consideration. We initially created a alignment vector which determines the similarity score between the encoder and the decoder by comparing current target hidden state with the every hidden state in source. We computed the context vector by performing the weighted average of alignment vector and the encoder states. The context vector and decoder states are concatenated and transferred using the tanh function to get the final decoding vector. This is passed through a softmax to predict the normalized value i.e., probability of the next word in the target sequence.
 
-One other change that improved the performance was training on multiple high-resource languages datasets for a given low-resource language. 
+One other change that improved the performance was **training on multiple high-resource languages datasets for a given low-resource language**. 
 
 All the models were implemented using Keras framework.
 
